@@ -50,9 +50,15 @@ const fs = require('fs')
 //         console.log('Its Done');
 // })
 
-fs.unlink('./DataBase/Posts.json',err=>{
-    if(err)
+// fs.unlink('./DataBase/Posts.json',err=>{
+//     if(err)
+//         console.log(err);
+//     else
+//         console.log('File is successfully deleted');
+// })
+fs.rename('Example.json', './DataBase/Posts.json', err => {
+    if (err)
         console.log(err);
     else
-        console.log('File is successfully deleted');
+        console.log('File moved and renamed');
 })
