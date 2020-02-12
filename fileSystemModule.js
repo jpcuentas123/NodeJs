@@ -56,9 +56,4 @@ const fs = require('fs')
 //     else
 //         console.log('File is successfully deleted');
 // })
-fs.rename('Example.json', './DataBase/Posts.json', err => {
-    if (err)
-        console.log(err);
-    else
-        console.log('File moved and renamed');
-})
+fs.readdir()
