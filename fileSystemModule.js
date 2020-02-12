@@ -56,4 +56,10 @@ const fs = require('fs')
 //     else
 //         console.log('File is successfully deleted');
 // })
-fs.readdir()
+fs.readdir("./",((err,files)=>{
+    if(err){
+        console.log(err)
+    }else{
+        console.log(files);
+    }
+}))
